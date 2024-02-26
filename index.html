@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Dottor Bavaro Tracker Ristoranti</a>
+      </div>
+    </nav>
+  </header>
+
+
+
+  
+  <main>
+    <div style="display: grid;justify-content: center;gap: 10px;">
+      <div class="input-group">
+        <input type="number" class="form-control" placeholder="Numero del ristorante" aria-describedby="basic-addon1" style="border-radius: 10px;" id="title">
+      </div>
+      <button id="bottone" onclick="API_call()" class="btn btn-default" style="border-radius: 10px;">Chiama API</button>
+      <button id="bottone" onclick="reload()" class="btn btn-default" style="border-radius: 10px;">Refresh</button>
+      <button id="bottone" onclick="ClearAndRefresh()" class="btn btn-default" style="border-radius: 10px;">Pulisci local e refresh</button>
+
+      <p>il bottone refresh serve a refreshare la pagina e a dimostrare che la funzione JS che gestisce i dati nel local storage funzioni correttamente :) </p>
+    </div>
+
+    <div id="lista" style="display: grid;justify-content: center;padding-top: 20px;">
+
+    </div>
+
+    
+  </main>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</body>
+</html>
